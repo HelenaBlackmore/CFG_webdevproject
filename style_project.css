@@ -1,0 +1,202 @@
+/* NAVIGATION BAR */
+.banner{
+    height: 200px;
+    background-color:#fec5bb; 
+    
+}
+.banner_img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 20px; 
+     width: 35%; 
+}
+
+.topnav{
+    background-color: #e57152;
+    overflow:hidden;
+    display:flex; 
+    font-size: 0.5em;
+  }
+
+
+  /* Style the links inside the navigation bar */
+
+  .topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:3em;
+  }
+ 
+
+  .topnav,.main, .menu, .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+  .main, .home{
+    position: relative;
+    background-color:#faeded;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    height: 50px;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+  .main input:checked ~ .menu {
+    width: 1000px;
+  }
+  .menu li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+
+  .main input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .main span {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .main input:checked ~ span {
+    background-color: #FF4D50;
+  }
+  .main span:nth-child(2) {
+    transform: translateY(-8px);
+  }
+  .main input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+  }
+  .main span:nth-child(3) {
+    transform: translateY(8px);
+  }
+  .main input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+  }
+  .main input:checked ~ span:nth-child(4) {
+    display: none;
+  }
+
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:coral;
+   
+  }
+
+  .home a:hover{
+    background-color:#faeded;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:#faeded;
+    color:#e57152 ;
+  }
+
+  #home-icon{
+    height: 30px;
+    object-fit:cover;
+  }
+
+/* BODY */
+body{
+  background-color:#faeded;
+  
+}
+
+.part1{
+padding-right: 50px;
+padding-left:50px;
+padding-top:20px;
+padding-bottom:20px;
+vertical-align: middle;
+}
+
+
+
+  .name{
+      font-weight: bold;
+      text-align: center;
+  }
+
+  #quote{
+      text-align: center;
+      font-size: 1.7em;
+      padding-top: 50px;
+      vertical-align: middle;
+      font-style: oblique;
+  }
+
+  #author{
+    text-align: center;
+    padding-top: 25px;
+  }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    width: 50px;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+ 
+
+  /* FOOTER */
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#fec5bb;
+    color:#e57152;
+    text-align: center;
+  }
+
+  .ref {
+    font-size: 5px;
+  }
+
+/* screen size change */
+
+@media(max-width:600px){
+  
+}
+
+
+
+
