@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>all</title>
-    <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gallery.css"> <!--links css stylesheet--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--links font-awesome--> 
     <script src="gallery_app.js"></script> <!--links javascript--> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--links google fonts--> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&family=Cookie&display=swap" rel="stylesheet"> <!-- google font-->
 
@@ -24,11 +24,10 @@
       <input type="checkbox">
         <span></span>
         <span></span>
-       <span></span>
+        <span></span>
         <div class="menu">
-          <li><a href="bad_viz.html">Bad data viz</a></li>
-          <li><a href="good_viz.html">Good data viz</a></li>
-          <li><a href="tutorials.html">R & Python tutorials</a></li>
+          <li><a href="all.html">Bad data viz</a></li>
+          <li><a href="goodviz.html">R & Python tutorials</a></li>
           <li><a href="https://helenablackmore.github.io/Rwebsite/index.html" target="_blank">Me, me, me</a></li>
         </div>
     </div>
@@ -43,18 +42,18 @@
  <section class="gallery">
   <div class="container">
     <div class="row">
-      <div class="gallery-filter">
-        <span class="filter-item active" data-filter="all">all</span>
-        <span class="filter-item" data-filter="watch">dodgy axis</span>
-        <span class="filter-item" data-filter="headphone">3D charts</span>
-        <span class="filter-item" data-filter="camera">pie charts</span>
-        <span class="filter-item" data-filter="camera">too busy</span>
-        <span class="filter-item" data-filter="phone">other</span>
+      <div class="gallery-filter" id="myBtnContainer">
+        <button class="filter-item active" data-filter="all" onclick="Filter()">all</button>
+        <button class="filter-item" data-filter="axis" onclick="Filter()">dodgy axis</button>
+        <button class="filter-item" data-filter="3d">3D charts</button>
+        <button class="filter-item" data-filter="pie">pie charts</button>
+        <button class="filter-item" data-filter="busy">too busy</button>
+        <button class="filter-item" data-filter="other">other</button>
       </div>
     </div>
     <div class="row">
       <!-- gallery item start -->
-      <div class="gallery-item">
+      <div class="gallery-item other">
         <div class = "layer"> 
           <p>Line graphs are great if you have a continous x axis. 
             Not here...</p> 
@@ -66,7 +65,7 @@
       <!-- gallery item end -->
 
       <!-- gallery item start -->
-      <div class="gallery-item">
+      <div class="gallery-item 3d">
         <div class = "layer"> 
           <p>It is rarely a good idea to use 3D bar chart. 
             It is <b>never a good idea </b> to use a 3D 3D bar chart. 
@@ -79,7 +78,7 @@
       <!-- gallery item end -->
 
       <!-- gallery item start -->
-      <div class="gallery-item">
+      <div class="gallery-item 3d">
         <div class = "layer"> 
           <p>Another 3D chart! This time projected onto 2D. 
             And what is plotted on the x, y, z and s axes? Which axis is which?
@@ -92,7 +91,7 @@
       <!-- gallery item end -->
 
       <!-- gallery item start -->
-      <div class="gallery-item">
+      <div class="gallery-item other">
         <div class = "layer"> 
           <p>If we overlook the problems with colors and layout.
              People are not very good at comparing size of circles... </p> 
@@ -554,6 +553,25 @@
     </div>
   </div>
 </section>
+<footer>
+  <div class = "icons">
+    <a href="https://github.com/HelenaBlackmore" class="fa fa-github"></a>
+    <a href="https://twitter.com/Helena_Blackmor" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/helena-blackmore-psychology/" class="fa fa-linkedin"></a>
+    <a href="mailto:helena.blackmore@gmail.com?subject=Mail from Website" class="fa fa-envelope-o"></a></div>
+  </div>
 
+  <div class = "me">
+     &copy; 2021 Helena Blackmore
+  </div>
+
+  <div class="icon-refs">
+    <div class = "ref">Icons are from 
+      <a href = "https://fontawesome.com/v5.15/icons">Font awesome </a>and by 
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from 
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

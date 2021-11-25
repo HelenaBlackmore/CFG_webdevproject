@@ -19,6 +19,12 @@
     font-size: 0.5em;
   }
 
+ .home:hover {
+border:solid 5px #fec5bb;
+  }
+ .main:hover{
+   border:solid 5px #fec5bb;
+ }
 
   /* Style the links inside the navigation bar */
 
@@ -205,11 +211,8 @@ vertical-align: middle;
     padding: 10px;
   }
 
-/* screen size change */
 
-@media(max-width:600px){
-  
-}
+
 
 
 
