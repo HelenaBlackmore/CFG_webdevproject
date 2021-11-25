@@ -1,6 +1,7 @@
 //selecting all required elements
 const filterItem = document.querySelector(".filter-item");
 const filterImg = document.querySelectorAll(".row .gallery-item");
+
 function Filter(){
     if(selectedItem.target.classList.contains(".filter-item")){ //if user selected item has .filter-item class
       filterItem.querySelector(".active").classList.remove("active"); //remove the active class which is in first item
