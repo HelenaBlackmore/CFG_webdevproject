@@ -1,0 +1,367 @@
+/* NAVIGATION BAR */
+.banner{
+    height: 200px;
+    background-color:#fec5bb; 
+    
+}
+.banner_img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 20px; 
+     width: 35%; 
+}
+
+.topnav{
+    background-color: #e57152;
+    overflow:hidden;
+    display:flex; 
+    font-size: 0.5em;
+  }
+
+
+  /* Style the links inside the navigation bar */
+
+  .topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:3em;
+  }
+
+  .top-head{
+      width: 100%;
+      text-align:center;
+      color: #666;
+      font-family:Architects Daughter;
+      text-shadow: 0.1px 0.1px rgb(44, 43, 43) ;
+  }
+ 
+  .gallery{
+    padding-right: 100px;
+    padding-left:50px;
+    padding-top:25px;
+    padding-bottom:20px;
+    vertical-align: middle; 
+    }
+  .topnav,.main, .menu, .home {
+    font-family:Architects Daughter;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+}
+  .main, .home{
+    position: relative;
+    background-color:#faeded;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:#e57152 ;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    height: 50px;
+   
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+
+  .main input:checked ~ .menu {
+    width: 600px;
+  }
+  .menu li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+
+  .main input {
+    width: 40px;
+    height: 40px;
+    cursor:pointer ;
+    opacity: 0;
+  }
+  .main span {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .main input:checked ~ span {
+    background-color: #FF4D50;
+  }
+  .main span:nth-child(2) {
+    transform: translateY(-8px);
+  }
+  .main input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+  }
+  .main span:nth-child(3) {
+    transform: translateY(8px);
+  }
+  .main input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+  }
+  .main input:checked ~ span:nth-child(4) {
+    display: none;
+  }
+
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:#e57152;
+   
+  }
+
+  .home a:hover{
+    background-color:#faeded;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:#faeded;
+    color:#e57152 ;
+  }
+
+  #home-icon{
+    height: 30px;
+    object-fit:cover;
+  }
+
+/* BODY */
+body{
+  background-color:#faeded;
+  
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding-top: 15px;
+    color:#e57152;
+    text-decoration: none;
+    
+  }
+
+  .me, .ref{
+    padding: 5px;
+    font-family: Architects Daughter ;
+  }
+  
+  /* Add a hover effect  */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* FOOTER */
+
+  footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#fec5bb;
+    color:#e57152;
+    text-align: center;
+  }
+
+  .ref {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+
+
+/*  DIRECTION SENSITIVE HOVER GALLERY */
+
+
+
+li a img { border:none;
+        height: 150px;
+        width: 150px; }
+
+ul {
+  margin:0 auto;
+  padding:0;
+  list-style:none;
+  text-align:center;
+  max-width:1000px;
+}
+li { display:inline-block; }
+ul a {
+  height:150px;
+  width:150px;
+  text-decoration:none;
+  position:relative;
+  margin:20px;
+  overflow:hidden;
+  float:left;
+  box-shadow:5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+ul a:focus{box-shadow:5px 5px 15px rgba(0, 0, 0, 0.7);}
+
+ul a:focus strong{ animation: down .3s ease forwards;}
+b {
+  display:block;
+  width:150px;
+  height:150px;
+  position:absolute;
+  z-index:2;
+  cursor:pointer;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+b:nth-of-type(1) {
+  left: 0;
+  top: -106px;
+}
+b:nth-of-type(2) {
+  left: 0;
+  bottom: -106px;
+}
+b:nth-of-type(3) {
+  left: -106px;
+  top: 0;
+}
+b:nth-of-type(4) {
+  right: -106px;
+  top: 0;
+}
+b:hover {
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:3;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+}
+strong {
+  display:table;
+  width:150px;
+  height:150px;
+  background:#fec5bb;
+  position:absolute;
+  top:0;
+  opacity:0;
+  -moz-transition:all .5s ease;
+  -webkit-transition:all .5s ease;
+  transition:all .5s ease;
+  
+}
+strong span {
+  vertical-align:middle;
+  display:table-cell;
+  padding:5px;
+  text-align:center;
+  color:#e57152;
+}
+b:nth-of-type(1):hover ~ strong {
+ -moz-animation:down .3s ease forwards;
+ -webkit-animation: down .3s ease forwards;
+ animation: down .3s ease forwards;
+}
+@-webkit-keyframes down {  from {
+-webkit-transform: translateY(-150px);
+}
+to {
+  -webkit-transform: translateY(0px);
+  opacity:1;
+}
+}
+@keyframes down {  from {
+transform: translateY(-150px);
+}
+to {
+  transform: translateY(0px);
+  opacity:1
+}
+}
+b:nth-of-type(2):hover ~ strong {
+ -moz-animation:up .3s ease forwards;
+ -webkit-animation: up .3s ease forwards;
+ animation: up .3s ease forwards;
+}
+@-webkit-keyframes up {  from {
+-webkit-transform: translateY(150px);
+}
+to {
+  -webkit-transform: translateY(0px);
+  opacity:1;
+}
+}
+@keyframes up {  from {
+transform: translateY(150px);
+}
+to {
+  transform: translateY(0px);
+  opacity:1;
+}
+}
+ b:nth-of-type(3):hover ~ strong {
+ -moz-animation:left .3s ease forwards;
+ -webkit-animation: left .3s ease forwards;
+ animation: left .3s ease forwards;
+ top:0;
+}
+@-webkit-keyframes left {  from {
+-webkit-transform: translateX(-150px);
+}
+to {
+  -webkit-transform: translateX(0px);
+  opacity:1;
+}
+}
+@keyframes left {  from {
+transform: translateX(-150px);
+}
+to {
+  transform: translateX(0px);
+  opacity:1;
+}
+}
+b:nth-of-type(4):hover ~ strong {
+ -moz-animation:right .3s ease forwards;
+ -webkit-animation: right .3s ease forwards;
+ animation: right .3s ease forwards;
+ top:0;
+ left:auto;
+ right:0;
+}
+@-webkit-keyframes right {  from {
+-webkit-transform: translateX(150px);
+}
+to {
+  -webkit-transform: translateX(0px);
+  opacity:1;
+}
+}
+@keyframes right {  from {
+transform: translateX(150px);
+}
+to {
+  transform: translateX(0px);
+  opacity:1;
+}
+}
+

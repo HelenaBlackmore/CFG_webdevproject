@@ -49,7 +49,7 @@
     border-color:#e57152 ;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0,0,0,.2);
-    height: 50px;
+    
   }
   .menu {
     margin: 0;
@@ -57,6 +57,7 @@
     width: 0;
     overflow: hidden;
     transition: 0.7s;
+    height:50px;
   }
   .main input:checked ~ .menu {
     width: 600px;
@@ -135,55 +136,8 @@ body{
   
 }
 
-.part1{
-padding-right: 100px;
-padding-left:50px;
-padding-top:20px;
-padding-bottom:20px;
-vertical-align: middle;
 
 
-}
-
-
-
-  .name{
-      font-weight: bold;
-      text-align: center;
-  }
-
-  #quote{
-      text-align: center;
-      font-size: 1.5em;
-      padding-top: 50px;
-      padding-left: 80px;
-      vertical-align: middle;
-      font-family: Architects Daughter ;
-  }
-
-  #author{
-    text-align: center;
-    padding-top: 10px;
-    font-family: Architects Daughter;
-  }
-
-/* Style all font awesome icons */
-.fa {
-    padding-top: 15px;
-    color:#e57152;
-    text-decoration: none;
-    
-  }
-
-  .me, .ref{
-    padding: 5px;
-    font-family: Architects Daughter ;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
   
  
 
@@ -205,12 +159,137 @@ vertical-align: middle;
     padding: 10px;
   }
 
-/* screen size change */
+  /* Style all font awesome icons */
+.fa {
+    padding-top: 15px;
+    color:#e57152;
+    text-decoration: none;
+    
+  }
 
-@media(max-width:600px){
+  .me, .ref{
+    padding: 5px;
+    font-family: Architects Daughter ;
+  }
   
-}
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
 
 
 
 
+/* GALLERY */
+
+*{
+    margin:0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img{
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  /*.gallery*/
+  .layer {
+      opacity: 0;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 150px;
+      background:#fec5bb;
+      color:black;
+      font-family: Architects Daughter;
+      transition: all 0.9s ease;
+      text-align: center;
+     
+    }
+  
+
+    .gallery-item:hover .layer {
+      opacity: 0.8;
+      width: 29%;
+      height: 250px;
+      transition: all 0.3s ease;
+     
+    }
+ 
+  .gallery{
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    background-color: #faeded;
+    padding: 100px 0;
+  }
+  .gallery .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .gallery .gallery-filter .filter-item{
+    color: #e57152;
+    font-size: 17px;
+    font-family: Architects Daughter;
+    border: 2px solid #e57152;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+  }
+  .gallery .gallery-filter .filter-item.active{
+    color: white;
+    border-color :#e57152;
+    background: #e57152;
+  }
+  .gallery .gallery-item{
+    width: calc(100% / 3);
+    padding: 15px;
+  
+  }
+
+  .gallery .gallery-item-inner img{
+    width: 100%;
+    border: 3px solid #d4dad9;
+  }
+
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .gallery .gallery-item.hide{
+    display: none;
+  }
+  
+  /*responsive*/
+  @media(max-width: 491px){
+    .gallery .gallery-item{
+      width: 50%;
+    }
+  }
+  @media(max-width: 467px){
+      .gallery .gallery-item{
+      width: 100%;
+    }
+    .gallery .gallery-filter .filter-item{
+      margin-bottom: 10px;
+    }
+  }
