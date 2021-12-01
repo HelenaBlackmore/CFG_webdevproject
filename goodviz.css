@@ -1,4 +1,4 @@
-/* BANNER */
+/* NAVIGATION BAR */
 .banner{
     height: 200px;
     background-color:#fec5bb; 
@@ -11,19 +11,21 @@
      padding-top: 20px; 
      width: 35%; 
 }
-/* NAVIGATION BAR */
+
 .topnav{
     background-color: #e57152;
     overflow:hidden;
     display:flex; 
     font-size: 0.5em;
+    
   }
-  .home:hover {
-    border:solid 5px #fec5bb;
-      }
-     .main:hover{
-       border:solid 5px #fec5bb;
-     }
+
+ .home:hover {
+border:solid 5px #fec5bb;
+  }
+ .main:hover{
+   border:solid 5px #fec5bb;
+ }
 
   /* Style the links inside the navigation bar */
 
@@ -35,14 +37,14 @@
     text-decoration: none;
     font-size:3em;
   }
-
  
-  .topnav,.main, .menu, .home {
+
+  .topnav,.main, .home {
     font-family:Architects Daughter;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; 
+    height: auto;
 }
   .main, .home{
     position: relative;
@@ -55,8 +57,9 @@
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0,0,0,.2);
     height: 50px;
-   
   }
+
+
   .menu {
     margin: 0;
     padding: 0;
@@ -64,7 +67,6 @@
     overflow: hidden;
     transition: 0.7s;
   }
-
   .main input:checked ~ .menu {
     width: 600px;
   }
@@ -136,42 +138,23 @@
     object-fit:cover;
   }
 
+
+
 /* BODY */
 body{
-  background-color:#faeded;
-  
+background-color:#faeded;
+
 }
-
-
-/* Style all font awesome icons */
-.fa {
-    padding-top: 15px;
-    color:#e57152;
-    text-decoration: none;
-    
-  }
-
-  .me, .ref{
-    padding: 5px;
-    font-family: Architects Daughter ;
-  }
-  
-  /* Add a hover effect  */
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-
 
   /* SPLIT SCREEN CONTENT */
 
  
-  .box {
+.box {
     display: flex;
     flex-direction: row;
     font-family: Architects Daughter;
     height:fit-content;
-}
+} 
 
 .left {
     width: 50%;
@@ -194,45 +177,50 @@ body{
 /* LIST */
 * {margin: 0; padding: 0;}
  
-div {
+.list-container {
   margin: 20px;
 }
  
-ul {
+.list {
   list-style-type: none;
   width: 500px;
 }
  
-h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+.list li h3 {
+  font: bold 20px/1.5 ;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box h1{
+  padding:25px;
 }
  
-li img {
+.list li img {
   float: left;
   margin: 0 15px 0 0;
   height:60px;
   width:60px;
 }
  
-li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+.list li p {
+  font: 200 12px/1.5 ;
 }
  
-li {
+.list li {
   padding: 10px;
   overflow: auto;
 
 }
 
-li a {
+.list li a {
   text-decoration: none;
   color: #666;
 }
-li a:visited {
+.list a:visited {
   color:#e57152;
 }
  
-li:hover {
+.list li:hover {
   background: #fec5bb;
   cursor: pointer;
 }
@@ -257,4 +245,21 @@ li:hover {
   }
 
 
+/* FOOTER */
+/* Style all font awesome icons */
+.fa {
+  padding-top: 15px;
+  color:#e57152;
+  text-decoration: none;
+  
+}
 
+.me, .ref{
+  padding: 5px;
+  font-family: Architects Daughter ;
+}
+
+/* Add a hover effect  */
+.fa:hover {
+  opacity: 0.7;
+}

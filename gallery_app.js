@@ -1,24 +1,43 @@
-//selecting all required elements
-const filterItem = document.querySelector(".filter-item");
-const filterImg = document.querySelectorAll(".row .gallery-item");
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
-function Filter(){
-    if(selectedItem.target.classList.contains(".filter-item")){ //if user selected item has .filter-item class
-      filterItem.querySelector(".active").classList.remove("active"); //remove the active class which is in first item
-      selectedItem.target.classList.add("active"); //add that active class on user selected item
-      let filterName = selectedItem.target.getAttribute("data-filter"); //getting data-name value of user selected item and store in a filtername variable
-      filterImg.forEach((image) => {
-        let filterImges = gallery-item.getAttribute("data-filter"); //getting image data-name value
-        //if user selected item data-name value is equal to images data-name value
-        //or user selected item data-name value is equal to "all"
-        if((filterImges == filterName) || (filterName == "all")){
-          filter-item.classList.remove("hide"); //first remove the hide class from the image
-          filter-item.classList.add("show"); //add show class in image
-        }else{
-          filter-item.classList.add("hide"); //add hide class in image
-          filter-item.classList.remove("show"); //remove show class from the image
-        }
-      });
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
     }
   }
+  element.className = arr1.join(" ");
+}
 
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}

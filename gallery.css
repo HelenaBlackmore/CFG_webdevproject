@@ -1,302 +1,298 @@
 /* NAVIGATION BAR */
 .banner{
-    height: 200px;
-    background-color:#fec5bb; 
-    
+  height: 200px;
+  background-color:#fec5bb; 
+  
 }
 .banner_img{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     padding-top: 20px; 
-     width: 35%; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 20px; 
+   width: 35%; 
 }
 
 .topnav{
-    background-color: #e57152;
-    overflow:hidden;
-    display:flex; 
-    font-size: 0.5em;
-  }
-
-  .home:hover {
-    border:solid 5px #fec5bb;
-      }
-  .main:hover{
-    border:solid 5px #fec5bb;
-     }
-  /* Style the links inside the navigation bar */
-
-  .topnav a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size:3em;
-  }
- 
-
-  .topnav,.main, .menu, .home {
-    font-family:Architects Daughter;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+  background-color: #e57152;
+  overflow:hidden;
+  display:flex; 
+  font-size: 0.5em;
 }
-  .main, .home{
-    position: relative;
-    background-color:#faeded;
-    padding: 20px;
-    transition: 0.5s;
-    border-radius: 50px;
-    border-style: solid;
-    border-color:#e57152 ;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
-    
-  }
-  .menu {
-    margin: 0;
-    padding: 0;
-    width: 0;
-    overflow: hidden;
-    transition: 0.7s;
-    height:50px;
-  }
-  .main input:checked ~ .menu {
-    width: 600px;
-  }
-  .menu li {
-    list-style: none;
-    margin: 0 10px;
-  }
-  .menu li a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 600;
-    transition: 0.5s;
-  }
 
-  .main input {
-    width: 40px;
-    height: 40px;
-    cursor:pointer ;
-    opacity: 0;
-  }
-  .main span {
-    position: absolute;
-    left: 30px;
-    width: 30px;
-    height: 4px;
-    border-radius: 50px;
-    background-color: #666;
-    pointer-events: none;
-    transition: 0.5s;
-  }
-  .main input:checked ~ span {
-    background-color: #FF4D50;
-  }
-  .main span:nth-child(2) {
-    transform: translateY(-8px);
-  }
-  .main input:checked ~ span:nth-child(2) {
-    transform: translateY(0) rotate(-45deg);
-  }
-  .main span:nth-child(3) {
-    transform: translateY(8px);
-  }
-  .main input:checked ~ span:nth-child(3) {
-    transform: translateY(0) rotate(45deg);
-  }
-  .main input:checked ~ span:nth-child(4) {
-    display: none;
-  }
+.home:hover {
+border:solid 5px #fec5bb;
+}
+.main:hover{
+ border:solid 5px #fec5bb;
+}
 
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color:#e57152;
-   
-  }
+/* Style the links inside the navigation bar */
 
-  .home a:hover{
-    background-color:#faeded;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color:#faeded;
-    color:#e57152 ;
-  }
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size:3em;
+}
 
-  #home-icon{
-    height: 30px;
-    object-fit:cover;
-  }
+
+.topnav,.main, .menu, .home {
+  font-family:Architects Daughter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.main, .home{
+  position: relative;
+  background-color:#faeded;
+  padding: 20px;
+  transition: 0.5s;
+  border-radius: 50px;
+  border-style: solid;
+  border-color:#e57152 ;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  height: 50px;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.7s; 
+}
+.main input:checked ~ .menu {
+  width: 600px;
+}
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.main input {
+  width: 40px;
+  height: 40px;
+  cursor:pointer ;
+  opacity: 0;
+}
+.main span {
+  position: absolute;
+  left: 30px;
+  width: 30px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #666;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.main input:checked ~ span {
+  background-color: #FF4D50;
+}
+.main span:nth-child(2) {
+  transform: translateY(-8px);
+}
+.main input:checked ~ span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+}
+.main span:nth-child(3) {
+  transform: translateY(8px);
+}
+.main input:checked ~ span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
+}
+.main input:checked ~ span:nth-child(4) {
+  display: none;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#e57152;
+ 
+}
+
+.home a:hover{
+  background-color:#faeded;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#faeded;
+  color:#e57152 ;
+}
+
+#home-icon{
+  height: 30px;
+  object-fit:cover;
+}
 
 /* BODY */
 body{
-  background-color:#faeded;
-  
+background-color:#faeded;
+
 }
 
 
 
-  
- 
-
-  /* FOOTER */
-
-  footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#fec5bb;
-    color:#e57152;
-    text-align: center;
-  }
-
-
-  .ref {
-    font-size: 10px;
-    padding: 10px;
-  }
-
-  /* Style all font awesome icons */
+/* Style all font awesome icons */
 .fa {
-    padding-top: 15px;
-    color:#e57152;
-    text-decoration: none;
-    
-  }
-
-  .me, .ref{
-    padding: 5px;
-    font-family: Architects Daughter ;
-  }
+  padding-top: 15px;
+  color:#e57152;
+  text-decoration: none;
   
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
+}
 
+.me, .ref{
+  padding: 5px;
+  font-family: Architects Daughter ;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 
 
 /* GALLERY */
 
-*{
-    margin:0;
-    box-sizing: border-box;
-  }
-  .container{
-    max-width: 1170px;
-    margin:auto;
-  }
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  img{
-    max-width: 100%;
-    vertical-align: middle;
-  }
-  /*.gallery*/
-  .layer {
-      opacity: 0;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30%;
-      height: 150px;
-      background:#fec5bb;
-      color:black;
-      font-family: Architects Daughter;
-      transition: all 0.9s ease;
-      text-align: center;
-     
-    }
-  
+/* Center website */
 
-    .gallery-item:hover .layer {
-      opacity: 0.8;
-      width: 29%;
-      height: 250px;
-      transition: all 0.3s ease;
-     
-    }
-  button{
-    background-color:#faeded;
-  }
-  .gallery{
-    width: 100%;
-    display: block;
-    min-height: 100vh;
-    background-color: #faeded;
-    padding: 100px 0;
-  }
-  .gallery .gallery-filter{
-    padding: 0 15px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .gallery .gallery-filter .filter-item{
-    color: #e57152;
-    font-size: 17px;
-    font-family: Architects Daughter;
-    border: 2px solid #e57152;
-    text-transform: uppercase;
-    display: inline-block;
-    border-radius: 20px;
-    margin-right: 8px;
-    cursor: pointer;
-    padding: 8px 20px 8px 20px;
-    line-height: 1.2;
-    transition: all 0.3s ease;
-  }
-  .gallery .gallery-filter .filter-item.active{
-    color: white;
-    border-color :#e57152;
-    background: #e57152;
-  }
-  .gallery .gallery-item{
-    width: calc(100% / 3);
-    padding: 15px;
-  
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .gallery .gallery-item-inner img{
-    width: 100%;
-    border: 3px solid #d4dad9;
-  }
+.main2 {
 
-  @keyframes fadeIn{
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-  .gallery .gallery-item.hide{
+  margin: auto; 
+}
+
+.gallery-filter{
+  position: relative;
+  top: 50%;
+  left:25%; 
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* SMALL SCREENS */
+
+@media only screen and (max-width: 600px) {
+  .column {
+    width:100%;
     display: none;
   }
+  .content:hover .layer {
+width: 89.9%;
+  }
+}
+
+/* opaque pop-up layer */
+.layer{
+  position: absolute;
+  height: 200px;
+  width: 31%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#fec5bb ;
+  color:black;
+  font-family:Architects Daughter;
+}
+
+.source{
+  color:#666;
+  text-decoration: none;
   
-  /*responsive*/
-  @media(max-width: 491px){
-    .gallery .gallery-item{
-      width: 50%;
-    }
-  }
-  @media(max-width: 467px){
-      .gallery .gallery-item{
-      width: 100%;
-    }
-    .gallery .gallery-filter .filter-item{
-      margin-bottom: 10px;
-    }
-  }
+}
+.source:hover{
+  color:black;
+}
+.content:hover .layer {
+
+  opacity:0.8;
+}
+
+
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+  width:100%;
+  height:530px;
+  background-color: #fec5bb;
+  align-content: center;
+}
+.column img {
+  width:100%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  border-radius:30px;
+  padding: 12px 16px 16px 16px;
+  margin-top: 20px;
+  background-color:#faeded;
+  border: 1px solid #e57152;
+  cursor: pointer;
+  box-shadow: 5px;
+  width: 100px;
+  font-family: Architects Daughter;
+  color:#666;
+  font-weight: bold;
+  position: relative;
+}
+
+.btn:hover {
+  border:solid 2px white ;
+  background-color: #fec5bb;
+}
+
+.btn.active {
+  background-color:#e57152;
+  color: #faeded;
+}
+
+
+
+
+/* FIX weird stuff */
+
+html,body{overflow-x: hidden;}
