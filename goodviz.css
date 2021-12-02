@@ -286,16 +286,6 @@ background-color:#faeded;
   width: 400px;
 }
 
-input[type=text] {
-	width: 50%;
-
-}
-
-/* When the input field gets focus,
-		change its width to 100% */
-input[type=text]:focus {
-	width: 80%;
-}
 
 }
 
@@ -315,10 +305,12 @@ input[type=text] {
 }
 
 /* When the input field gets focus,
-		change its width to 100% */
+		change its width to 30% */
 input[type=text]:focus {
 	width: 30%;
 }
 
 
-
+.tutorials{
+  display: list-item;    
+ } 
