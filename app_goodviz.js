@@ -1,17 +1,18 @@
-var defaultText = "Search..."; 
-var searchBox = document.getElementById("search"); 
 
-//default text after load 
-searchBox.value = defaultText; 
-//on focus behaviour 
-searchBox.onfocus = function() { 
-    if (this.value == defaultText) {
-        //clear text field
-         this.value = ''; } } //on blur behaviour 
-         searchBox.onblur = function() { 
-             if (this.value == "") {
-                 //restore default text 
-                 this.value = defaultText; } }
-
+// JavaScript code
+function search_tutorials() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('list');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
 
 

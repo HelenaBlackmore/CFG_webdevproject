@@ -192,6 +192,10 @@ background-color:#faeded;
   font-family:Architects Daughter;
 }
 
+.layer p{
+  padding:15px;
+}
+
 .source{
   color:#666;
   text-decoration: none;
