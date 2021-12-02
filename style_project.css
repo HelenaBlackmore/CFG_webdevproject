@@ -173,24 +173,7 @@ vertical-align: middle;
     font-family: Architects Daughter;
   }
 
-/* Style all font awesome icons */
-.fa {
-    padding-top: 15px;
-    color:#e57152;
-    text-decoration: none;
-    
-  }
 
-  .me, .ref{
-    padding: 5px;
-    font-family: Architects Daughter ;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
  
 
   /* FOOTER */
@@ -212,6 +195,23 @@ vertical-align: middle;
   }
 
 
+/* Style all font awesome icons */
+.fa {
+  padding-top: 15px;
+  color:#e57152;
+  text-decoration: none;
+  
+}
+
+.me, .ref{
+  padding: 5px;
+  font-family: Architects Daughter ;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
 
 
 
