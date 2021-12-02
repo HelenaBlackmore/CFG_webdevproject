@@ -175,18 +175,20 @@ background-color:#faeded;
 }
 
 /* LIST */
-* {margin: 0; padding: 0;}
+
  
 .list-container {
-  margin: 20px;
+  margin: 0px;
 }
  
 .list {
   list-style-type: none;
-  width: 500px;
+  width: 600px;
 }
  
 .list li h3 {
+  padding:0px;
+  margin:0px;
   font: bold 20px/1.5 ;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
