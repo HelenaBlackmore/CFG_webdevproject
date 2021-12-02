@@ -178,32 +178,7 @@ background-color:#faeded;
   padding-bottom:50px;
 }
 
-/* SMALL SCREENS */
 
-@media only screen and (max-width: 1200px) {
- 
-  .column img {
-    margin-left: 25px;
-    padding: 5px;
-    width:calc(98vw);
-    }
-
-
-    .content {
-    width:calc(99vw);
-    }
-
-.layer{
-  position: absolute;
-  height: 250px;
-  width: calc(99vw);
-  opacity: 0;
-  transition: .5s ease;
-  background-color:#fec5bb ;
-  color:black;
-  font-family:Architects Daughter;
-}
-}
 
 /* opaque pop-up layer */
 .layer{
@@ -289,7 +264,41 @@ background-color:#faeded;
   color: #faeded;
 }
 
+/* SMALL SCREENS */
 
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding:3px;
+    width: 50px;
+    font-size:small;
+    height: 50px;
+  }
+
+  .gallery-filter{
+    position: relative;
+    top: 50%;
+    left:20%; 
+  }
+
+  .column {
+    width: 100%; 
+    
+  }
+  .column img {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px;
+    width:calc(95vw);
+    height:250px;}
+
+    .layer{
+      width:90%;
+    }
+    .content {
+    width:calc(95vw);
+    }
+
+}
   /* FOOTER */
 
   footer {
